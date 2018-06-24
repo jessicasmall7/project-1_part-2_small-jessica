@@ -3,25 +3,125 @@
 // ========================================
 
 .header {
-
+  background-color: $black;
+  padding-left: $spacer-m;
+  padding-right: $spacer-m;
+  padding-top: $spacer-lg;
+  padding-bottom: $spacer-lg;
 }
 
+.header__logo{
+  width: 18%;
+  max-width: 220px;
+  min-width: 150px;
+}
+
+.nav{
+  width: 60%;
+  display: block;
+  padding: $spacer-s;
+  float: right;
+  text-align: right;
+}
+
+.nav__links-pages{
+  display: inline;
+  padding-left: 8%;
+}
+
+.nav__links-pages a{
+  text-decoration: none;
+}
+
+.nav__links-pages a:hover{
+  color: $blue;
+}
+
+
 .main {
-  padding: $spacer-m;
+  padding-left: $spacer-m;
+  padding-right: $spacer-m;
+  background-color: $cream;
+
 
   &__section {
     margin: $spacer-lg $reset-0;
 
     &--index {
-
+      height: 700px;
     }
   }
 }
 
 .item-container {
-    margin: $spacer-m $reset-0;
+    margin: $spacer-s $reset-0;
+}
+
+
+.card{
+  padding-top: 1%;
+  padding-bottom: 2%;
+  font-family: $secondary-font;
+  color: $cream;
+  text-align: center;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.card__swatch{
+  background-color: $black;
+  width: 150px;
+  height: 200px;
+  display: block;
+  float: left;
+  padding: .5%;
+  margin: 5px;
+}
+
+.card__swatch--color{
+  height: 145px;
+  width: 148px;
+  margin: auto;
+  display: block;
+}
+
+.orange {
+    background-color: $orange;
+}
+
+.blue {
+    background-color: $blue;
+}
+
+.grey {
+    background-color: $grey;
+}
+
+.cream {
+    background-color: $cream;
+}
+
+.black {
+  background-color: $black;
+  border: 2px;
+  border-color: $cream;
+}
+
+.darkBlue{
+  background-color: $darkBlue;
+}
+
+.red{
+  background-color: $red;
+}
+
+.green{
+  background-color: $green;
 }
 
 .footer {
-
+  background-color: $black;
+  text-align: center;
+  padding: $spacer-lg;
 }

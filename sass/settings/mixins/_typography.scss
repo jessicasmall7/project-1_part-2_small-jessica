@@ -2,10 +2,9 @@
 // ========================================
 
 // Font Styles
-@mixin font-type($type, $style, $weight) {
-  font-family: $type;
-  font-style:  $style;
-  font-weight: $weight;
+@mixin component-text {
+  font-family: $secondary-font;
+  color: $cream;
 }
 
 // Text Colors

@@ -24,13 +24,15 @@
     </header>
     <main class="main">
       <section class="main__section">
-        <h2>Components</h2>
+        <h1>Components</h1>
 
         <!-- This is where your alerts go -->
         <section class="main__section">
           <h3>Alerts</h3>
           <div class="item-container">
-            <!-- Make sure you include error, success and notification -->
+            <div class="alert--error">Oops! Please try again.</div>
+            <div class="alert--success">Submitted!</div>
+            <div class="alert--notification">You have a notification!</div>
           </div>
         </section>
 
@@ -38,7 +40,9 @@
         <section class="main__section">
           <h3>Buttons</h3>
           <div class="item-container">
-            <!-- Make sure your button Primary, secondary and each have a hover state -->
+            <div class="button--primary">Primary</div>
+            <div class="button--secondary">Secondary</div>
+            <div class="button--disabled">Disabled</div>
           </div>
         </section>
 
@@ -46,7 +50,10 @@
         <section class="main__section">
           <h3>Chips</h3>
           <div class="item-container">
-            <!-- Make sure you include a chip with a just a title and a chip with a title and description -->
+              <div class="chip--primary">AB</div>
+              <div class="chip--secondary">AB</div>
+              <p class="title"> Abby Bean</p>
+              <p class="title--light"> runnergirl1995</p>
           </div>
         </section>
 
@@ -54,7 +61,20 @@
         <section class="main__section">
           <h3>Form Elements</h3>
           <div class="item-container">
-            <!-- Make sure you include a basic text input - with or without a label, a basic text input with an error and a basic select box - with or without a label -->
+            <form class="form">
+              Name<br>
+              <input class="input" type="text" name="Name" value="Your Name Here">
+              <br>
+              Name<br>
+              <input class="input error" type="text" name="Name" value="Your Name Here">
+              <br>
+              <select class="select">
+                <option value="option 1">Option 1</option>
+                <option value="option 2">Option 2</option>
+                <option value="option 3">Option 3</option>
+                <option value="option 4">Option 4</option>
+              </select>
+            </form>
           </div>
         </section>
 

@@ -10,17 +10,21 @@
   text-align: center;
 }
 
+@mixin hover {
+  border-style: solid;
+  border-width: 2px;
+  background-color: transparent;
+}
+
 .button {
   &--primary {
     background-color: $blue;
     @include button;
 
     &:hover {
-      background-color: transparent;
       color: $blue;
-      border-width:2px;
       border-color: $blue;
-      border-style: solid;
+      @include hover;
     }
   }
 
@@ -28,17 +32,14 @@
     background-color: $green;
     @include button;
     &:hover {
-      background-color: transparent;
       color: $green;
-      border-width:2px;
       border-color: $green;
-      border-style: solid;
+      @include hover;
     }
   }
 
   &--disabled {
     @include button;
     background-color: $grey;
-
   }
 }

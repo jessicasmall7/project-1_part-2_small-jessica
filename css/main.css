@@ -96,7 +96,7 @@ table {
   .main__section {
     margin: 25px 0; }
     .main__section--index {
-      height: 700px; }
+      height: 825px; }
 
 .item-container {
   margin: 10px 0; }
@@ -158,37 +158,32 @@ table {
   padding: 25px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
 
 h1 {
   color: #ee7047;
-  font-size: 26pt;
-  font-weight: 700; }
+  font-size: 26pt; }
 
 h2 {
   color: #4d9bb4;
-  font-size: 22pt;
-  font-weight: 600; }
+  font-size: 22pt; }
 
 h3 {
   color: #4d9bb4;
-  font-size: 18pt;
-  font-weight: 600; }
+  font-size: 18pt; }
 
 h4 {
   color: #bdbdbd;
-  font-size: 16pt;
-  font-weight: 600; }
+  font-size: 16pt; }
 
 h5 {
   color: #4d9bb4;
-  font-size: 14pt;
-  font-weight: 600; }
+  font-size: 14pt; }
 
 h6 {
   color: #4d9bb4;
-  font-size: 12pt;
-  font-weight: 600; }
+  font-size: 12pt; }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -243,11 +238,11 @@ a {
   color: #fefcfb;
   text-align: center; }
   .button--primary:hover {
-    background-color: transparent;
     color: #4d9bb4;
-    border-width: 2px;
     border-color: #4d9bb4;
-    border-style: solid; }
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent; }
 .button--secondary {
   background-color: #b4b45f;
   width: 120px;
@@ -258,11 +253,11 @@ a {
   color: #fefcfb;
   text-align: center; }
   .button--secondary:hover {
-    background-color: transparent;
     color: #b4b45f;
-    border-width: 2px;
     border-color: #b4b45f;
-    border-style: solid; }
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent; }
 .button--disabled {
   width: 120px;
   padding: 10px;
@@ -314,11 +309,12 @@ a {
 .input {
   width: 300px;
   height: 20px;
-  font-family: "Open Sans", sans-serif;
   margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
   border-radius: 5px;
   border-color: #bdbdbd;
   border-style: solid;
+  border-width: 2px;
   padding: 10px;
   color: #2b2a2c; }
 
@@ -329,13 +325,13 @@ a {
 .select {
   width: 150px;
   height: 40px;
+  margin-top: 15px;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
   border-color: #bdbdbd;
   border-style: solid;
   border-width: 2px;
   padding: 10px;
-  color: #2b2a2c;
-  margin-top: 15px; }
+  color: #2b2a2c; }
 
 /*# sourceMappingURL=main.css.map */

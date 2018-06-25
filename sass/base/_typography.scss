@@ -6,46 +6,39 @@
 $primary-font: 'Poppins', sans-serif;
 $secondary-font: 'Open Sans', sans-serif;
 
-
-
 h1, h2, h3, h4, h5, h6 {
    font-family: $primary-font;
+   font-weight: 600;
 }
 
 h1 {
  color: $orange;
  font-size: 26pt;
- font-weight: 700;
 }
 
 h2 {
   color: $blue;
   font-size: 22pt;
-  font-weight: 600;
 }
 
 h3 {
   color: $blue;
   font-size: 18pt;
-  font-weight: 600;
 }
 
 h4 {
   color: $grey;
   font-size: 16pt;
-  font-weight: 600;
 }
 
 h5 {
   color: $blue;
   font-size: 14pt;
-  font-weight: 600;
 }
 
 h6 {
   color: $blue;
   font-size: 12pt;
-  font-weight: 600;
 }
 
 p {

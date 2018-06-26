@@ -3,30 +3,43 @@
 // ========================================
 
 .header {
+  text-align: center;
   background-color: $black;
-  padding-left: $spacer-xlg;
-  padding-right: $spacer-xlg;
   padding-top: $spacer-lg;
   padding-bottom: $spacer-lg;
+  @include media($medium) {
+    padding-left: $spacer-xlg;
+    padding-right: $spacer-xlg;
+    padding-top: $spacer-lg;
+    padding-bottom: $spacer-lg;
+    text-align: left;
+  }
 }
 
 .header__logo{
-  width: 18%;
-  max-width: 220px;
-  min-width: 150px;
+  width: 205px;
+  @include media($medium) {
+    width: 225px;
+  }
 }
 
 .nav{
-  width: 60%;
-  display: block;
-  padding: $spacer-s;
-  float: right;
-  text-align: right;
+  width: 100%;
+  padding-top: $spacer-s;
+  @include media($medium) {
+    padding: $spacer-s;
+    width: 60%;
+    float: right;
+    text-align: right;
+  }
 }
 
 .nav__links-pages{
   display: inline;
-  padding-left: 8%;
+  padding: $spacer-m;
+  @include media($medium) {
+    padding-left: 8%;
+  }
 }
 
 .nav__links-pages a{
@@ -64,19 +77,26 @@
   font-family: $secondary-font;
   color: $cream;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   float: left;
 }
 
 .card__swatch{
   background-color: $black;
+  padding: 2%;
   width: 150px;
   height: 200px;
   display: block;
   float: left;
-  padding: .5%;
   margin: 5px;
+  @include media($medium) {
+    padding: .75%;
+  }
+  @include media($extra-large) {
+    padding: .4%
+  }
 }
 
 .card__swatch--color{

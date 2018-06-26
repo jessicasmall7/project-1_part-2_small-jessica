@@ -7,9 +7,9 @@
   background-color: $black;
   padding-top: $spacer-lg;
   padding-bottom: $spacer-lg;
-  @include media($medium) {
-    padding-left: $spacer-xlg;
-    padding-right: $spacer-xlg;
+  @include media($large) {
+    padding-left: $spacer-xxl;
+    padding-right: $spacer-xxl;
     padding-top: $spacer-lg;
     padding-bottom: $spacer-lg;
     text-align: left;
@@ -26,9 +26,9 @@
 .nav{
   width: 100%;
   padding-top: $spacer-s;
-  @include media($medium) {
+  @include media($large) {
     padding: $spacer-s;
-    width: 60%;
+    width: 50%;
     float: right;
     text-align: right;
   }
@@ -37,7 +37,7 @@
 .nav__links-pages{
   display: inline;
   padding: $spacer-m;
-  @include media($medium) {
+  @include media($large) {
     padding-left: 8%;
   }
 }
@@ -52,10 +52,13 @@
 
 
 .main {
-  padding-left: $spacer-xlg;
-  padding-right: $spacer-xlg;
   background-color: $cream;
-
+  padding-left: $spacer-m;
+  padding-right: $spacer-m;
+  @include media($medium) {
+    padding-left: $spacer-xxl;
+    padding-right: $spacer-xxl;
+  }
 
   &__section {
     margin: $spacer-lg $reset-0;
